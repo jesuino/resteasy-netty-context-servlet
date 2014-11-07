@@ -14,6 +14,7 @@ public class Main {
 		netty.setSecurityDomain(null);
 		netty.start();
 		deployment.getRegistry().addPerRequestResource(SampleResource.class);
+		System.out.println("== STARTED ==");
 	}
 
 }

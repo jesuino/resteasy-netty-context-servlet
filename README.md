@@ -9,9 +9,14 @@ Reproducing
 
 * run `mvn clean package`
 
-* run `mvn exec:java` and in another command line run window `curl -X POST http://localhost:8080/resource`
+* run `mvn exec:java` and in another command line window run?
 
-* You should see the exception:
+    *  `curl -X POST http://localhost:8080/resource/request`
+    *  `curl -X POST http://localhost:8080/resource/response`
+    *  `curl -X POST http://localhost:8080/resource/config`
+    *  `curl -X POST http://localhost:8080/resource/context`
+
+* You should see exception similar to the following:
 
 ~~~
 == STARTING NETTY SERVER ==
@@ -46,3 +51,7 @@ org.jboss.resteasy.spi.LoggableFailure: Unable to find contextual data of type: 
 	at java.lang.Thread.run(Thread.java:745)
 ~~~
 
+
+* Then the following command should work. Which proves that the issue is only related to Servlet part:
+
+    *  `curl -X POST http://localhost:8080/resource/rs-request`
