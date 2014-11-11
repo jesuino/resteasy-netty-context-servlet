@@ -55,3 +55,9 @@ org.jboss.resteasy.spi.LoggableFailure: Unable to find contextual data of type: 
 * Then the following command should work. Which proves that the issue is only related to Servlet part:
 
     *  `curl -X POST http://localhost:8080/resource/rs-request`
+
+
+Using TJWS server
+=============================
+
+If you change the main class in `pom.xml` to use `MainTJWS`, notice that it will work.

@@ -3,7 +3,7 @@ package com.redhat.gss.ws.rs;
 import org.jboss.resteasy.plugins.server.netty.NettyJaxrsServer;
 import org.jboss.resteasy.spi.ResteasyDeployment;
 
-public class Main {
+public class MainNetty {
 	public static void main(String[] args) {
 		System.out.println("== STARTING NETTY SERVER ==");
 		ResteasyDeployment deployment = new ResteasyDeployment();

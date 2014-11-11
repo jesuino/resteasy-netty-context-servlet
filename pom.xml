@@ -24,6 +24,11 @@
 			<artifactId>resteasy-netty</artifactId>
 			<version>2.3.7.Final</version>
 		</dependency>
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>tjws</artifactId>
+			<version>2.3.7.Final</version>
+		</dependency>		
 	</dependencies>
 	<build>
 		<plugins>
@@ -39,7 +44,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<mainClass>com.redhat.gss.ws.rs.Main</mainClass>
+					<mainClass>com.redhat.gss.ws.rs.MainNetty</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
